@@ -148,7 +148,7 @@ BOOST_LIB_PATH = /usr/lib/arm-linux-gnueabihf/
 
 #### Go down to line 64 and change Lib Miniupnpc Path to 
 ```
-/usr/lib/arm-linux-gnueabihf/libminiupnpc.a
+LIBS += /usr/lib/arm-linux-gnueabihf/libminiupnpc.a
 ```
 
 #### Compile Maxcoind 
