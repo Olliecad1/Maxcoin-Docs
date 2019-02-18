@@ -27,7 +27,7 @@ The -y flag tells the OS to answer "yes" to any prompts warning you of extra dis
 
 #### Install the dependencies
 ```
-sudo apt-get install -y git-core build-essential libssl-dev libboost-all-dev libdb-dev libdb++-dev libminiupnpc-dev libqrencode-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qt-sdk
+sudo apt-get install -y git-core build-essential libssl-dev libboost-all-dev libdb-dev libdb++-dev libminiupnpc-dev libqrencode-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qt-sdk libssl1.0-dev libssl1.0.2
 ```
 
 #### Increase Swap File size for installation
