@@ -95,7 +95,7 @@ cd MaxCoin/src
 rm -rf cryptopp
 ```
 
-#### Install the dependencies(It may be already installed)
+#### Install the dependency(It may be already installed)
 ```
 sudo apt-get install unzip
 ```
