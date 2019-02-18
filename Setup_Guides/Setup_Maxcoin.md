@@ -78,6 +78,87 @@ make -j4
 sudo make install
 ```  
 
+#### Installing Maxcoin
+
+```
+cd ~/bin
+```   
+```
+git clone https://github.com/Max-Coin/MaxCoin.git
+```  
+```
+cd MaxCoin/src
+```  
+
+#### Remove Cryptopp 
+```
+rm -rf cryptopp
+```
+
+#### Install the dependencies(It may be already installed)
+```
+sudo apt-get install unzip
+```
+
+#### Creating the Cryptopp and rebuilding
+```
+mkdir cryptopp
+```
+```
+cd cryptopp
+```
+```
+wget http://www.cryptopp.com/cryptopp562.zip
+```
+```
+unzip -a cryptopp562.zip
+```
+#### Open GNUmakefile 
+
+```
+sudo nano GNUmakefile
+```
+#### Add -Wno-narrowing to the end of the first line of GNUmakefile 
+
+```
+-Wno-narrowing
+```
+
+#### Compile the cryptopp 
+```
+make static dynamic test
+```
+```
+sudo make install
+```
+
+#### Edit makefile.unix for the Raspberry Pi
+
+```
+cd ..
+```
+```
+nano makefile.unix
+```
+
+#### Go down to line 21 and change Boost Library Path to 
+```
+BOOST_LIB_PATH = /usr/lib/arm-linux-gnueabihf/
+```
+
+#### Go down to line 64 and change Lib Miniupnpc Path to 
+```
+/usr/lib/arm-linux-gnueabihf/libminiupnpc.a
+```
+
+#### Compile Maxcoind 
+```
+make -f makefile.unix
+```
+
+
+
+
 
 
 
